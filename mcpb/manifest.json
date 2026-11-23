@@ -1,0 +1,19 @@
+{
+  "manifest_version": "0.2",
+  "name": "chronocraft",
+  "version": "0.1.0",
+  "description": "System-Dynamics and Monte Carlo Scenario Simulator: stocks-and-flows models with feedback loops, RK4 solver, 10k-run percentile bands, and scenario compare",
+  "author": {
+    "name": "Sandra Schipal",
+    "url": "https://github.com/sandraschi/chronocraft"
+  },
+  "license": "MIT OR Apache-2.0",
+  "server": {
+    "type": "binary",
+    "entry_point": "chronocraft-mcp.exe",
+    "mcp_config": {
+      "command": "${__dirname}/chronocraft-mcp.exe",
+      "args": ["--mcp"]
+    }
+  }
+}

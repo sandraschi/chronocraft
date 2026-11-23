@@ -1,0 +1,25 @@
+[package]
+name = "chronocraft-app"
+description = "L3 Native Desktop Studio for ChronoCraft (Canvas, Sliders, Fan-Chart, Runs, Assistant, Help)"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+
+[[bin]]
+name = "chronocraft-app"
+path = "src/main.rs"
+
+[dependencies]
+eframe.workspace = true
+egui.workspace = true
+chronocraft-core = { path = "../chronocraft-core" }
+serde.workspace = true
+serde_json.workspace = true
+
+[dev-dependencies]
+egui_kittest.workspace = true
+
+[lints]
+workspace = true
